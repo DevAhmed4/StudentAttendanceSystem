@@ -27,8 +27,7 @@ public class SplashScreen extends AppCompatActivity {
             public void run() {
                 try {
                     // Thread will sleep for 3 seconds
-                    //scaleView(MTI_Logo,1f,0.2f,1f,0.2f);
-
+                    //start the animations for MTI_Logo image
                     MTI_Logo.startAnimation(scaleDown);
                     sleep(SECONDS*1000);
 
@@ -46,14 +45,5 @@ public class SplashScreen extends AppCompatActivity {
         background.start();
 
     }
-    public void scaleView(View v,float XstartScale,float XendScale, float YstartScale, float YendScale) {
-        Animation anim = new ScaleAnimation(
-                XstartScale, XendScale, // Start and end values for the X axis scaling
-                YstartScale, YendScale, // Start and end values for the Y axis scaling
-                Animation.START_ON_FIRST_FRAME, 50f, // Pivot point of X scaling
-                Animation.START_ON_FIRST_FRAME, 50f); // Pivot point of Y scaling
-        anim.setFillAfter(false); // Needed to keep the result of the animation
-        anim.setDuration(1000);
-        v.startAnimation(anim);
-    }
+
 }
