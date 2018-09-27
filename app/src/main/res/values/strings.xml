@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">StudentAttendanceSystem</string>
+    <string name="modern_university_for_technology_informations"><![CDATA[Modern University For Technology & Informations]]></string>
+    <string name="copyright">Copyright ©</string>
 </resources>
